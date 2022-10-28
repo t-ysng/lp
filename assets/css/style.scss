@@ -35,6 +35,10 @@ img {
   flex: 1;
 }
 
+/* header block */@at-root
+.page-title {
+  font-size: clamp(16px, calc(100vw * 24 /960), 24px);
+}
 .hero img {
   aspect-ratio: 956 / 458;
   object-fit: contain;
