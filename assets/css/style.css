@@ -20,6 +20,10 @@ img {
   width: 100%;
 }
 
+ul, ol, li {
+  list-style: none;
+}
+
 .Container {
   display: flex;
   flex-direction: column;
@@ -38,11 +42,16 @@ img {
   font-size: clamp(16px, 2.5vw, 24px);
 }
 
+.page-title span {
+  white-space: nowrap;
+}
+
 .page_header-hero {
   background: url(../images/AdobeStock_427560854_Preview.jpeg) left top no-repeat;
   background-size: contain;
   aspect-ratio: 956/458;
   height: auto;
+  padding: clamp(4px, 2.0833333333vw, 16px);
 }
 
 /*
@@ -52,4 +61,18 @@ img {
   height: auto;
 }
 */
+.hazard-type-list {
+  font-size: clamp(8px, 2.1666666667vw, 13px);
+  display: flex;
+  gap: 4px;
+}
+
+:is(.hazard-type-list > li) {
+  color: rgb(42, 110, 25);
+  font-weight: 600;
+  line-height: 0.8;
+  background-color: #fff;
+  padding: 0.3em 0.4em;
+  border-radius: 3px;
+}
 /*# sourceMappingURL=style.css.map */

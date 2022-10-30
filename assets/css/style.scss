@@ -22,6 +22,10 @@ img {
   width: 100%;
 }
 
+ul, ol, li {
+  list-style: none;
+}
+
 .Container {
   display: flex;
   flex-direction: column;
@@ -39,11 +43,17 @@ img {
 .page-title {
   font-size: clamp(16px, calc(100vw * 24 /960), 24px);
 }
+
+.page-title span {
+  white-space: nowrap;
+}
+
 .page_header-hero {
   background: url(../images/AdobeStock_427560854_Preview.jpeg) left top no-repeat;
   background-size: contain;
   aspect-ratio: 956 / 458;
   height: auto;
+  padding: clamp(4px, calc(100vw * 16 / 768), 16px);
 }
 /*
 .hero img {
@@ -53,3 +63,17 @@ img {
 }
 */
 
+.hazard-type-list {
+  font-size: clamp(8px, calc(100vw * 13 / 600) ,13px);
+  display: flex;
+  gap: 4px;
+}
+
+:is(.hazard-type-list > li) {
+  color: rgb(42, 110, 25);
+  font-weight: 600;
+  line-height: 0.8;
+  background-color: #fff;
+  padding: 0.3em 0.4em;
+  border-radius: 3px;
+}
