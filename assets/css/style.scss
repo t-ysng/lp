@@ -71,9 +71,13 @@ ul, ol, li {
 
 :is(.hazard-type-list > li) {
   color: rgb(42, 110, 25);
-  font-weight: 600;
   line-height: 0.8;
   background-color: #fff;
   padding: 0.3em 0.4em;
   border-radius: 3px;
+}
+
+:is(.hazard-type-list > li > em) {
+  font-weight: 600;
+  font-style: normal;
 }
