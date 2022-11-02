@@ -29,15 +29,9 @@ ul, ol, li {
 .Container {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  max-width: 960px;
-  height: 100%;
-  min-height: 100%;
-=======
   max-width: 956px;
   height: 100vh;
   height: 100dvh;
->>>>>>> 0c3ab81f745c72bb3b9df2ae10f13897e934bb6b
   margin: 0 auto;
 }
 
@@ -45,12 +39,6 @@ ul, ol, li {
   flex: 1;
 }
 
-<<<<<<< HEAD
-.page-title {
-  font-size: clamp(12px, calc(100vw * 24 / 960), 24px);
-}
-
-=======
 /* header block */@at-root
 .page-title {
   font-size: clamp(16px, calc(100vw * 24 /960), 24px);
@@ -61,14 +49,14 @@ ul, ol, li {
 }
 
 .page_header-hero {
-  background: url(../images/AdobeStock_427560854_Preview.jpeg) left top no-repeat;
+  background: url(../images/hero_bg.jpg) left top no-repeat;
   background-size: contain;
   aspect-ratio: 956 / 458;
   height: auto;
   padding: clamp(4px, calc(100vw * 16 / 768), 16px);
 }
+
 /*
->>>>>>> 0c3ab81f745c72bb3b9df2ae10f13897e934bb6b
 .hero img {
   aspect-ratio: 956 / 458;
   object-fit: contain;
