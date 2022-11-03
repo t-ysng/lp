@@ -206,7 +206,7 @@ a {
 }
 */
 .l-nav {
-  xtransform: translateX(-240px);
+  transform: translateX(-240px);
   /* visibility: hidden; */
 }
 
