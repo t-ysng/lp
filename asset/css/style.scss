@@ -18,6 +18,10 @@ body {
   height: 100%;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 img.full-width {
   width: 100%;
 }
@@ -78,6 +82,7 @@ a {
   margin-right: clamp(8px, calc(100vw * 32 /960), 32px);  
 }
 
+/* Header Hero Section */
 .page_header-hero {
   background: url(../images/hero_bg.jpg) left top no-repeat;
   background-size: contain;
@@ -119,14 +124,34 @@ a {
   font-style: normal;
 }
 
+.catchcopy-holder {
+  // background-color: rgba(255, 255, 255, .75);
+  width: clamp(80px, calc(100vw * 192 / 960), 192px);
+  padding-top: clamp(8px, calc(100vw * 16 / 960), 16px);
+  padding-right: clamp(16px, calc(100vw * 32 / 960), 32px);
+  padding-bottom: clamp(8px, calc(100vw * 16 / 960), 16px);
+  padding-left: clamp(8px, calc(100vw * 16 / 960), 16px);
+  position: absolute;
+  top: clamp(0px, calc(100vw * 8 / 960), 32px);
+  right: 0;
+  backdrop-filter: blur(3px);
+  aspect-ratio: 192 / 59;
+}
+
+.catchcopy {
+  width: 100%;
+  object-fit: contain;
+}
+
 .site-concept {
   color: rgb(0, 110, 255);
   font-size: clamp(18px, calc(100vw * 32 / 960), 32px);
   font-family: 'Noto Serif JP', serif;
   font-weight: 500;
-  background-color: #ffffffaa;
+  background-color: #ffffff66;
   place-self: center;
   width: fit-content;
+  backdrop-filter: blur(3px);
 }
 
 .site-message {

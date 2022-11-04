@@ -16,6 +16,10 @@ body {
   height: 100%;
 }
 
+img {
+  vertical-align: bottom;
+}
+
 img.full-width {
   width: 100%;
 }
@@ -76,6 +80,7 @@ a {
   margin-right: clamp(8px, 3.3333333333vw, 32px);
 }
 
+/* Header Hero Section */
 .page_header-hero {
   background: url(../images/hero_bg.jpg) left top no-repeat;
   background-size: contain;
@@ -115,16 +120,38 @@ a {
   font-style: normal;
 }
 
+.catchcopy-holder {
+  width: clamp(80px, 20vw, 192px);
+  padding-top: clamp(8px, 1.6666666667vw, 16px);
+  padding-right: clamp(16px, 3.3333333333vw, 32px);
+  padding-bottom: clamp(8px, 1.6666666667vw, 16px);
+  padding-left: clamp(8px, 1.6666666667vw, 16px);
+  position: absolute;
+  top: clamp(0px, 0.8333333333vw, 32px);
+  right: 0;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  aspect-ratio: 192/59;
+}
+
+.catchcopy {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .site-concept {
   color: rgb(0, 110, 255);
   font-size: clamp(18px, 3.3333333333vw, 32px);
   font-family: "Noto Serif JP", serif;
   font-weight: 500;
-  background-color: rgba(255, 255, 255, 0.6666666667);
+  background-color: rgba(255, 255, 255, 0.4);
   place-self: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
 }
 
 .site-message {
