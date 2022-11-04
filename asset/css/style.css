@@ -160,15 +160,15 @@ a {
 /* Footer Block */
 .page_footer {
   display: grid;
-  grid-template-rows: 0 2fr 1fr auto;
+  grid-template-rows: 0 2fr 0.5fr auto;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 630px) {
   .page_footer {
-    grid-template-rows: 0 2fr 2fr 1fr auto;
+    grid-template-rows: 0 2fr 2fr 0.5fr auto;
   }
 }
 :is(.touch-device .page_footer) {
@@ -177,8 +177,9 @@ a {
   max-height: 600px;
 }
 
-.page_footer::before {
+.page_footer::before:hover {
   content: "";
+  background: rgba(0, 0, 0, 0.7);
   display: block;
   position: absolute;
   top: 0;
@@ -246,7 +247,7 @@ a {
   left: 32px;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 630px) {
   .branch-info-holder {
     position: relative;
     margin-top: 32px;
@@ -258,10 +259,15 @@ a {
 .branch-info {
   aspect-ratio: 231/140;
   height: auto;
-  transform: scale(1.1);
+  transform: scale(1.2);
   transform-origin: top left;
 }
 
+@media screen and (max-width: 630px) {
+  .branch-info {
+    transform: scale(1);
+  }
+}
 .access-map-holder {
   display: flex;
   flex-direction: column;
@@ -293,6 +299,7 @@ a {
   width: fit-content;
   margin-right: 64px;
   margin-left: auto;
+  transform: scale(0.8);
 }
 
 .youtube-qr-title {
