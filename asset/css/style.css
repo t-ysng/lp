@@ -160,12 +160,17 @@ a {
 /* Footer Block */
 .page_footer {
   display: grid;
-  grid-template-rows: 32px 2fr 1fr auto;
+  grid-template-rows: 0 2fr 1fr auto;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
 
+@media screen and (max-width: 570px) {
+  .page_footer {
+    grid-template-rows: 0 2fr 2fr 1fr auto;
+  }
+}
 :is(.touch-device .page_footer) {
   height: 100vh;
   height: 100dvh;
@@ -207,6 +212,8 @@ a {
 }
 */
 .l-nav {
+  position: relative;
+  z-index: 100;
   transform: scale(0.8) translateX(-240px);
   transform-origin: top left;
 }
@@ -240,19 +247,24 @@ a {
 }
 
 @media screen and (max-width: 570px) {
-  .page_footer {
-    grid-template-rows: 0 2fr 2fr 1fr auto;
-  }
   .branch-info-holder {
     position: relative;
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: 32px;
-    top: 0;
     left: 0;
   }
 }
+.branch-info {
+  aspect-ratio: 231/140;
+  height: auto;
+  transform: scale(1.1);
+  transform-origin: top left;
+}
+
 .access-map-holder {
+  display: flex;
+  flex-direction: column;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -261,10 +273,15 @@ a {
 
 .access-map {
   width: clamp(300px, 43.75vmin, 420px);
-  padding: 0 16px;
+  padding: 16px 16px 0;
   height: auto;
-  transform: scale(1.2);
   transform-origin: top right;
+}
+
+.access-route {
+  width: clamp(300px, 43.75vmin, 420px);
+  height: auto;
+  transform: scale(0.7);
 }
 
 .youtube-qr-holder {
