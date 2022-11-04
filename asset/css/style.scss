@@ -173,10 +173,10 @@ a {
 :is(.site-message span) {
   white-space: nowrap;
 }
-
+/*
 .site-message::before {
   content: '';
-  // background-color: rgb(0, 110, 255);
+  background-color: rgb(0, 110, 255);
   display: block;
   width: 100%;
   position: absolute;
@@ -186,9 +186,7 @@ a {
   top: 0;
   z-index: -1;
 }
-
-
-
+*/
 
 /* Footer Block */
 .page_footer {
