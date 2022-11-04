@@ -172,8 +172,8 @@ a {
 }
 
 .touch-device .page_footer {
-  min-height: 100vh;
-  min-height: 100dvh;
+  // min-height: 100vh;
+  // min-height: 100dvh;
 }
 
 
@@ -213,9 +213,12 @@ a {
 */
 
 .l-nav {
-  // transform: translateX(-240px);
-  transform: scale(0.8);
+  transform: scale(0.8) translateX(-240px);
   transform-origin: top left;
+}
+
+.page_footer:hover .l-nav {
+  transform: scale(0.8) translateX(0);
 }
 
 :is(.l-nav > ul) {
