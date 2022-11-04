@@ -166,6 +166,12 @@ a {
   overflow: hidden;
 }
 
+:is(.touch-device .page_footer) {
+  height: 100vh;
+  height: 100dvh;
+  max-height: 600px;
+}
+
 .page_footer::before {
   content: "";
   display: block;
@@ -205,7 +211,7 @@ a {
   transform-origin: top left;
 }
 
-.page_footer:hover .l-nav {
+:is(.page_footer:hover .l-nav) {
   transform: scale(0.8) translateX(0);
 }
 
@@ -257,6 +263,8 @@ a {
   width: clamp(300px, 43.75vmin, 420px);
   padding: 0 16px;
   height: auto;
+  transform: scale(1.2);
+  transform-origin: top right;
 }
 
 .youtube-qr-holder {
