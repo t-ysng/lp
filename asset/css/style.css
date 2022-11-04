@@ -36,8 +36,8 @@ a {
   display: flex;
   flex-direction: column;
   max-width: 960px;
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   margin: 0 auto;
 }
 
@@ -161,10 +161,6 @@ a {
 .page_footer {
   display: grid;
   grid-template-rows: 32px 2fr 1fr auto;
-  /*
-  height: clamp(80vw, calc(100vw * 420 / 960), 420px);
-  max-height: 420px;
-  */
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -172,7 +168,6 @@ a {
 
 .page_footer::before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
   display: block;
   position: absolute;
   top: 0;
@@ -206,8 +201,8 @@ a {
 }
 */
 .l-nav {
-  transform: translateX(-240px);
-  /* visibility: hidden; */
+  transform: scale(0.8);
+  transform-origin: top left;
 }
 
 :is(.l-nav > ul) {
@@ -230,16 +225,23 @@ a {
 */
 .branch-info-holder {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: 32px;
+  left: 32px;
 }
 
 @media screen and (max-width: 570px) {
   .page_footer {
-    grid-template-rows: 0 1fr 1fr 1fr auto;
+    grid-template-rows: 0 2fr 2fr 1fr auto;
+    min-height: 100vh;
+    min-height: 100dvh;
   }
   .branch-info-holder {
     position: relative;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    top: 0;
+    left: 0;
   }
 }
 .access-map-holder {
