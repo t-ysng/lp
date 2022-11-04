@@ -166,6 +166,11 @@ a {
   overflow: hidden;
 }
 
+.touch-device .page_footer {
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
 .page_footer::before {
   content: "";
   display: block;
@@ -232,8 +237,6 @@ a {
 @media screen and (max-width: 570px) {
   .page_footer {
     grid-template-rows: 0 2fr 2fr 1fr auto;
-    min-height: 100vh;
-    min-height: 100dvh;
   }
   .branch-info-holder {
     position: relative;
