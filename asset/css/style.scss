@@ -13,9 +13,19 @@ html {
 }
 
 body {
+  font-size: 18px;
   font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   height: 100%;
+}
+
+.touch-device body {
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  // font-family: 'BIZ UDGothic', sans-serif;
+  font-family: 'Kosugi Maru', sans-serif;
 }
 
 img {
@@ -450,3 +460,8 @@ a {
   letter-spacing : 8px ;
   color : rgba(255,255,255,1) ;
 }
+
+
+
+/* TOP-PAGE Main Block */
+
