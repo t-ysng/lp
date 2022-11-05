@@ -127,7 +127,7 @@ a {
 
 /* Header Hero Section */
 .page_header-hero {
-  background: url(../images/hero_bg.jpg) left top no-repeat;
+  background: url(../images/hero_bg.jpg) right top no-repeat;
   background-size: cover;
   // aspect-ratio: 956 / 458;
   display: grid;
@@ -140,9 +140,9 @@ a {
   position: relative;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 6000px) {
   .page_header-hero {
-    background-position: left -60px top 0px;
+    background-position: left -120px top 0px;
   }
 }
 
@@ -178,7 +178,7 @@ a {
 
 .catchcopy-holder {
   // background-color: rgba(255, 255, 255, .75);
-  width: clamp(124px, calc(100vw * 192 / 960), 192px);
+  width: clamp(124px, calc(100vw * 312 / 960), 312px);
   padding-top: clamp(8px, calc(100vw * 16 / 960), 16px);
   padding-right: clamp(16px, calc(100vw * 32 / 960), 32px);
   padding-bottom: clamp(8px, calc(100vw * 16 / 960), 16px);
@@ -247,14 +247,14 @@ section{
 
 .top-section {
   padding: 0;
-  margin-bottom: 64px; 
+  margin-bottom: 32px; 
   position: relative;
 }
 
 :is(.top-section section) {
   padding: 16px;
 }
-
+/*
 .top-section::after {
   content: '';
   display: block;
@@ -266,8 +266,9 @@ section{
   left: 50%;
   transform: translateX(-50%);
 }
-
+*/
 .top-section-title {
+  font-size: clamp(16px, calc(100vw * 24 / 960), 24px);
   background-color:rgb(0, 110, 255, 0.25);
 }
 
@@ -535,4 +536,13 @@ section{
 
 
 /* TOP-PAGE Main Block */
+.whats-ace-title {
+  width: fit-content;
+  margin: 0 auto;
+}
 
+.whats-ace-title-image {
+  width: clamp(32px, calc(100vw * 64 / 960), 64px);
+  padding: 8px;
+  margin-bottom: -16px
+}
