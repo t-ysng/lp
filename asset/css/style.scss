@@ -273,6 +273,7 @@ section{
 }
 
 .staff-photo-holder {
+  width: 100%;
   max-width: 100vw;
 }
 
@@ -542,7 +543,7 @@ section{
 }
 
 .whats-ace-title-image {
-  width: clamp(32px, calc(100vw * 64 / 960), 64px);
+  width: clamp(48px, calc(100vw * 64 / 960), 64px);
   padding: 8px;
   margin-bottom: -16px
 }
