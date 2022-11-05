@@ -53,6 +53,8 @@ li::before {
 
 img {
   vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
 }
 
 img.full-width {
@@ -71,13 +73,6 @@ a {
   text-decoration: none;
 }
 
-.Container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  min-height: 100dvh;
-}
-
 .main, .page_footer {
   width: 100%;
   max-width: 960px;
@@ -89,13 +84,13 @@ a {
   padding-top: clamp(1px, (100vw - 960px) * 8 / 960, 8px);
   height: 100vh;
   height: 100dvh;
-  overflow: hidden;
 }
 
 .page-title {
   color: rgb(42, 110, 25);
   font-size: clamp(8px, 1.6666666667vw, 11px);
   font-weight: 400;
+  line-height: 1.4;
   display: flex;
   align-items: center;
   gap: clamp(4px, 1.6666666667vw, 16px);
@@ -125,7 +120,7 @@ a {
   background-size: cover;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: 100%;
+  height: calc(100% - 32px);
   /*padding: clamp(4px, calc(100vw * 16 / 768), 16px);*/
   position: relative;
 }
@@ -233,9 +228,18 @@ a {
 }
 */
 /* Main Block ------------------------------------------------- */
+section {
+  padding: 16px;
+}
+
 .top-section {
+  padding: 0;
   margin-bottom: 64px;
   position: relative;
+}
+
+:is(.top-section section) {
+  padding: 16px;
 }
 
 .top-section::after {
@@ -250,6 +254,14 @@ a {
 
 .top-section-title {
   background-color: rgba(0, 110, 255, 0.25);
+}
+
+.staff-photo-holder {
+  max-width: 100vw;
+}
+
+.staff-photo {
+  width: 100%;
 }
 
 /* Footer Block ------------------------------------------------*/
