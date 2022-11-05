@@ -212,7 +212,7 @@ a {
 
 .page_footer:hover::before {
   content: "";
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.3);
   display: block;
   position: absolute;
   top: 0;
@@ -220,8 +220,8 @@ a {
   bottom: 0;
   left: 0;
   z-index: 1;
-  -webkit-backdrop-filter: blur(3px);
-          backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
 }
 
 .page_footer::after {
@@ -252,6 +252,7 @@ a {
   z-index: 100;
   transform: scale(0.8) translateX(-240px);
   transform-origin: top left;
+  transition: all 0.2s 0.15s ease;
 }
 
 :is(.page_footer:hover .l-nav) {
