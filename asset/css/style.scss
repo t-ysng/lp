@@ -58,6 +58,7 @@ a {
 }
 
 .page-title {
+  color:rgb(42, 110, 25);
   font-size: clamp(8px, calc(100vw * 16 /960), 11px);
   font-weight: 400;
   display: flex;
@@ -86,13 +87,22 @@ a {
 /* Header Hero Section */
 .page_header-hero {
   background: url(../images/hero_bg.jpg) left top no-repeat;
-  background-size: contain;
-  aspect-ratio: 956 / 458;
+  background-size: cover;
+  // aspect-ratio: 956 / 458;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: auto;
+  max-height: 100vh;
+  max-height: 100dvh;
+  min-height: 400px;
   /*padding: clamp(4px, calc(100vw * 16 / 768), 16px);*/
   position: relative;
+}
+
+@media screen and (max-width: 480px) {
+  .page_header-hero {
+    background-position: left -60px top 0px;
+  }
 }
 
 /*
@@ -127,7 +137,7 @@ a {
 
 .catchcopy-holder {
   // background-color: rgba(255, 255, 255, .75);
-  width: clamp(80px, calc(100vw * 192 / 960), 192px);
+  width: clamp(124px, calc(100vw * 192 / 960), 192px);
   padding-top: clamp(8px, calc(100vw * 16 / 960), 16px);
   padding-right: clamp(16px, calc(100vw * 32 / 960), 32px);
   padding-bottom: clamp(8px, calc(100vw * 16 / 960), 16px);
@@ -343,6 +353,7 @@ a {
 .copyright {
   font-weight: 300;
   text-align: center;
+  background-color: rgba(255, 255, 255, .75);
 }
 
 /* Local Navigation Button */
