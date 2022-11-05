@@ -84,6 +84,7 @@ a {
   padding-top: clamp(1px, (100vw - 960px) * 8 / 960, 8px);
   height: 100vh;
   height: 100dvh;
+  overflow: hidden;
 }
 
 .page-title {
@@ -250,6 +251,8 @@ section {
   border-bottom: double 3px #999;
   position: absolute;
   bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .top-section-title {
