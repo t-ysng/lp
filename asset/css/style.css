@@ -535,6 +535,10 @@ section {
 }
 
 /* TOP-PAGE Main Block */
+:is(.top-section > .staff-message) {
+  padding: 1em;
+}
+
 .whats-ace-title {
   font-size: clamp(16px, 1.875vw, 18px);
   width: -webkit-fit-content;
