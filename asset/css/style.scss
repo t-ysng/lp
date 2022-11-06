@@ -30,7 +30,9 @@ h1, h2 {
   // font-family: 'BIZ UDGothic', sans-serif;
   // font-family: 'Kosugi Maru', sans-serif;
   // line-height: 0.8;
-  padding: 0.5em 0.5em;
+  text-align: center;
+  // padding: 0.5em 0.5em;
+  margin-bottom: 16px;
 }
 
 :is(h1, h2, h3, h4, h5) span {
@@ -276,7 +278,8 @@ section{
 */
 .top-section-title {
   font-size: clamp(16px, calc(100vw * 24 / 960), 24px);
-  background-color:rgb(0, 110, 255, 0.25);
+  // background-color:rgb(0, 110, 255, 0.25);
+  border-bottom: solid 2px rgb(0, 110, 255, 0.25);
 }
 
 .staff-photo-holder {
@@ -553,6 +556,7 @@ section{
   font-family: 'Noto-Serif', serif;
   font-weight: 900;
   font-size: 2em;
+  font-style: oblique;
   height: 48px;
   padding-left: 140px;
   position: absolute;
