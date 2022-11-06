@@ -544,6 +544,25 @@ section{
 
 
 /* TOP-PAGE Main Block */
+.top-section {
+  padding-top: 64px;
+}
+
+.top-section::before {
+  content: attr(title);
+  font-family: 'Noto-Serif', serif;
+  font-weight: 900;
+  font-size: 2em;
+  height: 48px;
+  padding-left: 140px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
 :is(.top-section > .staff-message) {
   padding: 1em;
 }
@@ -564,4 +583,29 @@ section{
   display: block;
   width: fit-content;
   margin: 16px auto;
+}
+
+.intro::before {
+  background: url(../images/contents01.svg) no-repeat top left;
+  background-size: contain;
+}
+
+.curriculumn::before {
+  background: url(../images/contents02.svg) no-repeat top left;
+  background-size: contain;
+}
+
+.activities::before {
+  background: url(../images/contents03.svg) no-repeat top left;
+  background-size: contain;
+}
+
+.users-voice::before {
+  background: url(../images/contents04.svg) no-repeat top left;
+  background-size: contain;
+}
+
+.facilities::before {
+  background: url(../images/contents05.svg) no-repeat top left;
+  background-size: contain;
 }
