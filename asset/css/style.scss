@@ -29,8 +29,12 @@ body {
 h1, h2 {
   // font-family: 'BIZ UDGothic', sans-serif;
   // font-family: 'Kosugi Maru', sans-serif;
-  line-height: 0.8;
+  // line-height: 0.8;
   padding: 0.5em 0.5em;
+}
+
+:is(h1, h2, h3, h4, h5) span {
+  white-space: nowrap;
 }
 
 th {
@@ -541,14 +545,15 @@ section{
 
 /* TOP-PAGE Main Block */
 .whats-ace-title {
+  font-size: clamp(16px, calc(100vw * 18 / 960), 18px);
   width: fit-content;
   margin: 0 auto;
 }
 
 .whats-ace-title-image {
-  width: clamp(48px, calc(100vw * 64 / 960), 64px);
+  width: clamp(36px, calc(100vw * 64 / 960), 64px);
   padding: 8px;
-  margin-bottom: -16px
+  // margin-bottom: -16px
 }
 
 .ace-concept-image-holder {
