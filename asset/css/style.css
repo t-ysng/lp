@@ -544,4 +544,11 @@ section {
   padding: 8px;
   margin-bottom: -16px;
 }
+
+.ace-concept-image-holder {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 16px auto;
+}
 /*# sourceMappingURL=style.css.map */
