@@ -262,7 +262,7 @@ section {
 }
 */
 .top-section-title {
-  font-size: clamp(16px, 2.5vw, 24px);
+  font-size: clamp(24px, 3.3333333333vw, 32px);
   border-bottom: solid 2px rgba(0, 110, 255, 0.25);
 }
 
@@ -542,12 +542,17 @@ section {
 
 .top-section::before {
   content: attr(title);
+  color: #999;
   font-family: "Noto-Serif", serif;
   font-weight: 900;
-  font-size: 2em;
+  font-size: clamp(32px, 5vw, 48px);
   font-style: oblique;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: clamp(80px, 11.4583333333vw, 110px);
+  line-height: 1.2;
   height: 48px;
-  padding-left: 140px;
+  padding-left: clamp(100px, 14.5833333333vw, 140px);
   position: absolute;
   top: 0;
   right: 0;
@@ -581,27 +586,22 @@ section {
 }
 
 .intro::before {
-  background: url(../images/contents01.svg) no-repeat top left;
-  background-size: contain;
+  background-image: url(../images/contents01.svg);
 }
 
 .curriculumn::before {
-  background: url(../images/contents02.svg) no-repeat top left;
-  background-size: contain;
+  background-image: url(../images/contents02.svg);
 }
 
 .activities::before {
-  background: url(../images/contents03.svg) no-repeat top left;
-  background-size: contain;
+  background-image: url(../images/contents03.svg);
 }
 
 .users-voice::before {
-  background: url(../images/contents04.svg) no-repeat top left;
-  background-size: contain;
+  background-image: url(../images/contents04.svg);
 }
 
 .facilities::before {
-  background: url(../images/contents05.svg) no-repeat top left;
-  background-size: contain;
+  background-image: url(../images/contents05.svg);
 }
 /*# sourceMappingURL=style.css.map */
