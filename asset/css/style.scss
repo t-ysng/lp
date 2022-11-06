@@ -132,14 +132,14 @@ a {
 .page_header-hero {
   background: url(../images/hero_bg.jpg) left top no-repeat;
   background-size: cover;
-  // aspect-ratio: 956 / 458;
   display: grid;
   grid-template-rows: auto 1fr auto;
   height: calc(100% - 36px);
   // max-height: 100vh;
   // max-height: 100dvh;
   // min-height: 400px;
-  /*padding: clamp(4px, calc(100vw * 16 / 768), 16px);*/
+  // padding: clamp(4px, calc(100vw * 16 / 768), 16px);
+  // aspect-ratio: 956 / 458;
   position: relative;
 }
 
