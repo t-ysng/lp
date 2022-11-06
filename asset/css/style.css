@@ -566,7 +566,7 @@ section {
 }
 
 .whats-ace-title {
-  font-size: clamp(16px, 1.875vw, 18px);
+  font-size: clamp(16px, 3.3333333333vw, 32px);
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
