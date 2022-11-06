@@ -13,8 +13,10 @@ html {
 
 body {
   font-size: 18px;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Kosugi Maru", sans-serif;
   font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 2px;
   height: 100%;
 }
 
@@ -23,7 +25,6 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Kosugi Maru", sans-serif;
   line-height: 0.8;
   padding: 0.5em 0.5em;
 }
@@ -118,16 +119,16 @@ a {
 
 /* Header Hero Section */
 .page_header-hero {
-  background: url(../images/hero_bg.jpg) right top no-repeat;
+  background: url(../images/hero_bg.jpg) left top no-repeat;
   background-size: cover;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  height: calc(100% - 40px);
+  height: calc(100% - 36px);
   /*padding: clamp(4px, calc(100vw * 16 / 768), 16px);*/
   position: relative;
 }
 
-@media screen and (max-width: 6000px) {
+@media screen and (max-width: 600px) {
   .page_header-hero {
     background-position: left -120px top 0px;
   }
