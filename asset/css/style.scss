@@ -58,7 +58,7 @@ dd {
   margin-bottom: 0.5em;
 }
 
-li::before {
+:is(.main li::before) {
   content: '・';
   padding-right: 0.25em;
 }
