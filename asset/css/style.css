@@ -191,11 +191,11 @@ a {
 }
 
 .site-message-holder {
-  background-color: rgb(0, 110, 255);
+  background-color: hsl(189deg, 100%, 78%);
 }
 
 .site-message {
-  color: #fff;
+  color: #333;
   font-size: clamp(10px, 1.6666666667vw, 16px);
   font-weight: 300;
   width: -webkit-fit-content;
