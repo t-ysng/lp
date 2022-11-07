@@ -567,12 +567,12 @@ a {
 
 
 /* TOP-PAGE Main Block -------------------------------------------------- */
-.Index .staff-photo-holder {
+:is(.Index .staff-photo-holder) {
   width: 100%;
   max-width: 100vw;
 }
 
-.Index .staff-photo {
+:is(.Index .staff-photo) {
   width: 100%;
 }
 
@@ -580,40 +580,40 @@ a {
   padding: 1em;
 }
 
-.Index .whats-ace-title {
+:is(.Index .whats-ace-title) {
   font-size: clamp(16px, calc(100vw * 32 / 960), 32px);
   width: fit-content;
   margin: 0 auto;
 }
 
-.Index .whats-ace-title-image {
+:is(.Index .whats-ace-title-image) {
   width: clamp(36px, calc(100vw * 64 / 960), 64px);
   padding: 8px;
   // margin-bottom: -16px
 }
 
-.Index .ace-concept-image-holder {
+:is(.Index .ace-concept-image-holder) {
   display: block;
   width: fit-content;
   margin: 16px auto;
 }
 
-.Index .intro::before {
+:is(.Index .intro::before) {
   background-image: url(../images/contents01.svg);
 }
 
-.Index .curriculumn::before {
+:is(.Index .curriculumn::before) {
   background-image: url(../images/contents02.svg);
 }
 
-.Index .activities::before {
+:is(.Index .activities::before) {
   background-image: url(../images/contents03.svg);
 }
 
-.Index .users-voice::before {
+:is(.Index .users-voice::before) {
   background-image: url(../images/contents04.svg);
 }
 
-.Index .facilities::before {
+:is(.Index .facilities::before) {
   background-image: url(../images/contents05.svg);
 }
