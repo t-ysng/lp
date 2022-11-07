@@ -53,16 +53,6 @@ section, p, ul, ol, dl, details, picture {
   margin-bottom: 1em;
 }
 
-dd {
-  padding-left: 1em;
-  margin-bottom: 0.5em;
-}
-
-:is(.main li::before) {
-  content: '・';
-  padding-right: 0.25em;
-}
-
 img {
   vertical-align: bottom;
   max-width: 100%;
@@ -251,8 +241,18 @@ a {
 
 
 /* Main Block ------------------------------------------------- */
-section{
+:is(.main section) {
   padding: 16px
+}
+
+:is(.main dd) {
+  padding-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+:is(.main li::before) {
+  content: '・';
+  padding-right: 0.25em;
 }
 
 .top-section {
