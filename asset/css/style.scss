@@ -23,7 +23,7 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-  font-size: clamp(calc(100vw / 44), calc(100vw * 18 / 960), 18px);
+  font-size: clamp(calc(8px, calc(100vw * 18 / 960), 18px);
 }
 
 .touch-device body {
