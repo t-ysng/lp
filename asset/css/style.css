@@ -13,16 +13,12 @@ html {
 
 body {
   font-size: 18px;
-  font-size: clamp(2.0833333333vw, 100vw, 18px);
+  font-size: clamp(2.2727272727vw, 1.875vw, 18px);
   font-family: "Kosugi Maru", sans-serif;
   font-weight: 300;
   line-height: 1.6;
   letter-spacing: 2px;
   height: 100%;
-}
-
-.touch-device body {
-  font-size: 16px;
 }
 
 h1, h2 {
