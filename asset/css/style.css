@@ -69,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+.Container {
+  position: relative;
+}
+
 .main, .page_footer {
   width: 100%;
   max-width: 960px;
