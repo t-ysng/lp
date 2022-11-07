@@ -13,7 +13,6 @@ html {
 
 body {
   font-size: 18px;
-  font-size: clamp(2.2727272727vw, 1.875vw, 18px);
   font-family: "Kosugi Maru", sans-serif;
   font-weight: 300;
   line-height: 1.6;
@@ -21,6 +20,11 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 960px) {
+  body {
+    font-size: clamp(12px, 1.875vw, 18px);
+  }
+}
 h1, h2 {
   text-align: center;
   margin-bottom: 16px;
@@ -264,32 +268,12 @@ a {
 }
 */
 :is(.main .top-section-title) {
-  font-size: clamp(24px, 3.3333333333vw, 32px);
+  font-size: clamp(20px, 3.3333333333vw, 32px);
   border-bottom: solid 2px rgba(0, 110, 255, 0.25);
 }
 
 :is(.main .top-section) {
   padding-top: 64px;
-}
-
-:is(.main .top-section::before) {
-  content: attr(title);
-  color: #999;
-  font-family: "Noto-Serif", serif;
-  font-weight: 900;
-  font-size: clamp(32px, 5vw, 48px);
-  font-style: oblique;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: clamp(80px, 11.4583333333vw, 110px);
-  line-height: 1.2;
-  height: 48px;
-  padding-left: clamp(100px, 14.5833333333vw, 140px);
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
 /* Footer Block ------------------------------------------------*/
@@ -553,6 +537,46 @@ a {
 }
 
 /* TOP-PAGE Main Block -------------------------------------------------- */
+:is(.Index .main .top-section)::before {
+  content: attr(title);
+  color: #999;
+  font-family: "Noto-Serif", serif;
+  font-weight: 900;
+  font-size: clamp(32px, 5vw, 48px);
+  font-style: oblique;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: clamp(80px, 11.4583333333vw, 110px);
+  line-height: 1.2;
+  height: 48px;
+  padding-left: clamp(100px, 14.5833333333vw, 140px);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+:is(.Index .intro)::before {
+  background-image: url(../images/contents01.svg);
+}
+
+:is(.Index .curriculumn)::before {
+  background-image: url(../images/contents02.svg);
+}
+
+:is(.Index .activities)::before {
+  background-image: url(../images/contents03.svg);
+}
+
+:is(.Index .users-voice)::before {
+  background-image: url(../images/contents04.svg);
+}
+
+:is(.Index .facilities)::before {
+  background-image: url(../images/contents05.svg);
+}
+
 :is(.Index .staff-photo-holder) {
   width: 100%;
   max-width: 100vw;
@@ -585,25 +609,5 @@ a {
   width: -moz-fit-content;
   width: fit-content;
   margin: 16px auto;
-}
-
-:is(.Index .intro::before) {
-  background-image: url(../images/contents01.svg);
-}
-
-:is(.Index .curriculumn::before) {
-  background-image: url(../images/contents02.svg);
-}
-
-:is(.Index .activities::before) {
-  background-image: url(../images/contents03.svg);
-}
-
-:is(.Index .users-voice::before) {
-  background-image: url(../images/contents04.svg);
-}
-
-:is(.Index .facilities::before) {
-  background-image: url(../images/contents05.svg);
 }
 /*# sourceMappingURL=style.css.map */
