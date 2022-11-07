@@ -591,23 +591,26 @@ a {
 }
 
 .staff-message-wrapper {
-  position: absolute;
-  top: 16px;
-  left: 16px;
   width: clamp(240px, 60vw, 60%);
   height: auto;
   aspect-ratio: 400/166;
+  position: absolute;
+  top: 16px;
+  left: 16px;
 }
 
 .staff-message-bg {
   width: 100%;
   height: auto;
+  margin: 5% 0 0;
+  position: relative;
 }
 
 .staff-message {
-  font-size: 0.8em;
+  font-size: clamp(10px, 1.3333333333vw, 0.8em);
   line-height: 1.1;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -618,6 +621,18 @@ a {
   white-space: nowrap;
 }
 
+@media screen and (max-width: 600px) {
+  .staff-message-wrapper {
+    line-height: 1;
+    width: 320px;
+    transform: scale(0.75);
+    transform-origin: top left;
+  }
+  .staff-message {
+    font-size: 6px;
+    line-height: 1;
+  }
+}
 /* 事業所紹介セクション*/
 :is(.Index .whats-ace-title) {
   font-size: clamp(16px, 3.3333333333vw, 32px);
